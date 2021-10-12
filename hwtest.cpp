@@ -8,7 +8,7 @@ bool gpio_get(uint16_t pin) {
     return false;
 }
 uint16_t adc_read() {
-    return 0;
+    return 1537;
 }
 #endif
 
