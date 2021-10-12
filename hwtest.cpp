@@ -145,7 +145,7 @@ void update(uint32_t time) {
                 uint16_t result = adc_read();
                 const float vconf = 3.3f / (1 << 12);
                 float battery_voltage = result * vconf * 3.0f;
-                if(battery_voltage > 2.5f and battery_voltage < 4.5f) {
+                if(battery_voltage > 2.5f && battery_voltage < 4.5f) {
                     text = "Battery: PASS!\n" + std::to_string(battery_voltage) + "v";
                     goto_state(TEST_BUTTONS, 500);
                 } else {
